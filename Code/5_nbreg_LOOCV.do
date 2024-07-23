@@ -200,7 +200,7 @@ foreach Out of local Machine_List{
             
             // Check if any residuals by muscle site are statistically significantly different from zero
 
-            noisi qreg diffReal i.Muscle, cluster(PID) quantile(0.50)
+            noisi qreg2 diffReal i.Muscle, cluster(PID) quantile(0.50)
 
             lincom _b[_cons] + _b[0.Muscle]
             lincom _b[_cons] + _b[1.Muscle]
