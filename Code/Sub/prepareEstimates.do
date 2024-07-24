@@ -1,3 +1,4 @@
+version 17.0
 
 use "`ROOT'/nbreg_individual_estimates.dta", clear
 
@@ -19,7 +20,7 @@ levelsof PID, local(PID_List)
 
 tab Muscle, gen(dummyMuscles_)
 
-foreach Var in lnmean lnmeanAdj lnalpha{
+foreach Var in lnmean lnalpha{
     foreach curMachine of local Machine_List{
         egen `Var'_std_gnbreg_m`curMachine' = std(`Var'_hat_gnbreg_m`curMachine')
     }
