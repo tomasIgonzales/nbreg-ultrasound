@@ -18,7 +18,7 @@ gen converged = .
 
 // Estimate negative binomial regression model for each machine and muscle pair within each participant
 
-log using "`ROOT'/nbreg_individual.log", name(nbreg_individual) replace text nomsg
+log using "`ROOT'/2_nbreg_individual.log", name(nbreg_individual) replace text nomsg
 
 qui{
 

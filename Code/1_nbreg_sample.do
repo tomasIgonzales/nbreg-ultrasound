@@ -10,7 +10,7 @@ include "Sub/getData.do"
 
 // Run the model in the entire dataset
 
-log using "`ROOT'/nbreg_sample.log", name(nbreg_sample) replace text nomsg
+log using "`ROOT'/1_nbreg_sample.log", name(nbreg_sample) replace text nomsg
 
 qui{
         

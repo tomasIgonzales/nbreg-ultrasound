@@ -8,7 +8,7 @@ args ROOT
 
 include "Sub/prepareEstimates.do"
 
-log using "`ROOT'/nbreg_conversion.log", name(nbreg_conversion) replace text nomsg
+log using "`ROOT'/4_nbreg_conversion.log", name(nbreg_conversion) replace text nomsg
 
 qui{
 

@@ -8,7 +8,7 @@ args ROOT
 
 include "Sub/prepareEstimates.do"
 
-log using "`ROOT'/nbreg_LOOCV.log", name(nbreg_LOOCV) replace text nomsg
+log using "`ROOT'/5_nbreg_LOOCV.log", name(nbreg_LOOCV) replace text nomsg
 
 qui{
 

@@ -1,0 +1,2179 @@
+
+. 
+. qui{
+Sensitivity analyses to determine the optimal set of predictors for the conversion models (ln 
+> μ, ln a, muscle site, interactions).
+
+Predict lnmean 0 using 1
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  16.604525  
+Iteration 1:   log pseudolikelihood =  18.264228  
+Iteration 2:   log pseudolikelihood =  18.302029  
+Iteration 3:   log pseudolikelihood =   18.30205  
+Iteration 4:   log pseudolikelihood =   18.30205  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =      75.77
+Log pseudolikelihood =  18.30205                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m0 |
+lnmean_hat_gnbreg_m1 |   .7213147   .0828667     8.70   0.000      .558899    .8837304
+               _cons |   .9478123   .3863329     2.45   0.014     .1906137    1.705011
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m1 |  -.3416617   .5678346    -0.60   0.547    -1.454597    .7712736
+               _cons |  -1.518035   2.702559    -0.56   0.574    -6.814954    3.778884
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 0.36                   Prob > chi2 = 0.5474
+
+Level 1
+logLike: 18.30205034190512
+AIC: -28.60410068381023
+pvalParam: 3.18923888503e-18
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  50.288634  
+Iteration 1:   log pseudolikelihood =  53.786865  
+Iteration 2:   log pseudolikelihood =  54.107587  
+Iteration 3:   log pseudolikelihood =  54.108137  
+Iteration 4:   log pseudolikelihood =  54.108137  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =     631.94
+Log pseudolikelihood =  54.10814                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m0 |
+lnmean_hat_gnbreg_m1 |   1.010383   .0887397    11.39   0.000     .8364568     1.18431
+      dummyMuscles_2 |   .0956767   .0564417     1.70   0.090     -.014947    .2063003
+      dummyMuscles_3 |   .1917037   .0574884     3.33   0.001     .0790285    .3043789
+      dummyMuscles_4 |  -.0267819   .0499831    -0.54   0.592     -.124747    .0711832
+      dummyMuscles_5 |   .3239377   .0397046     8.16   0.000      .246118    .4017573
+      dummyMuscles_6 |  -.1449544   .0780169    -1.86   0.063    -.2978647    .0079559
+               _cons |  -.5133026   .3802117    -1.35   0.177    -1.258504    .2318986
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m1 |   2.544943   .5981395     4.25   0.000     1.372611    3.717275
+      dummyMuscles_2 |  -.7145929   .2779555    -2.57   0.010    -1.259376   -.1698101
+      dummyMuscles_3 |   .5616331    .529444     1.06   0.289    -.4760581    1.599324
+      dummyMuscles_4 |  -1.058063   .4487907    -2.36   0.018    -1.937677   -.1784494
+      dummyMuscles_5 |   -.282724   .3760874    -0.75   0.452    -1.019842    .4543937
+      dummyMuscles_6 |  -1.215475   .7364947    -1.65   0.099    -2.658978    .2280277
+               _cons |  -15.55844   2.887226    -5.39   0.000     -21.2173   -9.899582
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 90.85                  Prob > chi2 = 0.0000
+
+Level 2
+logLike: 54.10813729497894
+AIC: -80.21627458995788
+pvalParam: 4.89907416249e-42
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  56.316943  
+Iteration 1:   log pseudolikelihood =   59.58785  
+Iteration 2:   log pseudolikelihood =  60.775187  
+Iteration 3:   log pseudolikelihood =  60.793516  
+Iteration 4:   log pseudolikelihood =  60.793574  
+Iteration 5:   log pseudolikelihood =  60.793574  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =     625.97
+Log pseudolikelihood =  60.79357                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+ lnmean_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m0  |
+ lnmean_hat_gnbreg_m1 |   .9123469   .0809421    11.27   0.000     .7537034     1.07099
+       dummyMuscles_2 |   .1358366   .0559199     2.43   0.015     .0262357    .2454375
+       dummyMuscles_3 |     .20026   .0487468     4.11   0.000     .1047181    .2958019
+       dummyMuscles_4 |  -.0555417   .0488755    -1.14   0.256    -.1513359    .0402526
+       dummyMuscles_5 |    .354507    .041127     8.62   0.000     .2738996    .4351144
+       dummyMuscles_6 |   -.150193   .0650334    -2.31   0.021     -.277656   -.0227299
+lnalpha_hat_gnbreg_m1 |  -.1562457   .0388077    -4.03   0.000    -.2323073    -.080184
+                _cons |  -.4920613    .330917    -1.49   0.137    -1.140647    .1565241
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+ lnmean_hat_gnbreg_m1 |   3.109802   1.080645     2.88   0.004      .991777    5.227827
+       dummyMuscles_2 |  -.9368776   .3811219    -2.46   0.014    -1.683863   -.1898924
+       dummyMuscles_3 |   .1261009   .4739689     0.27   0.790    -.8028611    1.055063
+       dummyMuscles_4 |  -.6088654   .4439405    -1.37   0.170    -1.478973     .261242
+       dummyMuscles_5 |  -.4694473   .3848055    -1.22   0.222    -1.223652    .2847576
+       dummyMuscles_6 |  -1.281901   .9338315    -1.37   0.170    -3.112178    .5483749
+lnalpha_hat_gnbreg_m1 |   .2186586   .3947642     0.55   0.580    -.5550651    .9923823
+                _cons |  -17.68769   5.671167    -3.12   0.002    -28.80297   -6.572407
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 38.84                  Prob > chi2 = 0.0000
+
+Level 3
+logLike: 60.79357375748622
+AIC: -89.58714751497244
+pvalParam: .0000566967623409
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  57.654659  
+Iteration 1:   log pseudolikelihood =  61.440428  
+Iteration 2:   log pseudolikelihood =  63.446546  
+Iteration 3:   log pseudolikelihood =  63.513177  
+Iteration 4:   log pseudolikelihood =  63.513273  
+Iteration 5:   log pseudolikelihood =  63.513273  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =    1007.52
+Log pseudolikelihood =  63.51327                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+   lnmean_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m0    |
+   lnmean_hat_gnbreg_m1 |   1.354189   .0972766    13.92   0.000      1.16353    1.544847
+         dummyMuscles_2 |    .165199   .0616017     2.68   0.007     .0444619    .2859361
+         dummyMuscles_3 |    .238759   .0387698     6.16   0.000     .1627716    .3147464
+         dummyMuscles_4 |  -.0462957   .0514961    -0.90   0.369    -.1472262    .0546348
+         dummyMuscles_5 |   .3707043   .0496535     7.47   0.000     .2733852    .4680234
+         dummyMuscles_6 |  -.0949958   .0712879    -1.33   0.183    -.2347176    .0447259
+  lnalpha_hat_gnbreg_m1 |  -1.009618   .2599447    -3.88   0.000      -1.5191   -.5001355
+                        |
+ c.lnmean_hat_gnbreg_m1#|
+c.lnalpha_hat_gnbreg_m1 |   .1783275   .0508982     3.50   0.000     .0785689     .278086
+                        |
+                  _cons |  -2.622831   .4949986    -5.30   0.000     -3.59301   -1.652651
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+   lnmean_hat_gnbreg_m1 |   2.539564   6.146665     0.41   0.679    -9.507679    14.58681
+         dummyMuscles_2 |  -1.123409   .3887965    -2.89   0.004    -1.885436   -.3613815
+         dummyMuscles_3 |   -.234617   .4448039    -0.53   0.598    -1.106417    .6371826
+         dummyMuscles_4 |  -.6838988   .3591421    -1.90   0.057    -1.387804    .0200068
+         dummyMuscles_5 |  -.6015823    .420195    -1.43   0.152    -1.425149    .2219847
+         dummyMuscles_6 |  -1.563365   .8374136    -1.87   0.062    -3.204665     .077936
+  lnalpha_hat_gnbreg_m1 |   2.267993   10.09219     0.22   0.822    -17.51234    22.04832
+                        |
+ c.lnmean_hat_gnbreg_m1#|
+c.lnalpha_hat_gnbreg_m1 |  -.3692722   2.167185    -0.17   0.865    -4.616877    3.878332
+                        |
+                  _cons |  -14.05684   28.56433    -0.49   0.623    -70.04189    41.92821
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 86.78                  Prob > chi2 = 0.0000
+
+Level 4
+logLike: 63.51327262788772
+AIC: -91.02654525577543
+pvalParam: .000458993147817
+
+
+Predict lnalpha 0 using 1
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -79.056818  
+Iteration 1:   log pseudolikelihood = -78.910717  
+Iteration 2:   log pseudolikelihood =  -78.91049  
+Iteration 3:   log pseudolikelihood =  -78.91049  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =      29.37
+Log pseudolikelihood = -78.91049                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m0 |
+lnalpha_hat_gnbreg_m1 |   .7676228   .1416345     5.42   0.000     .4900243    1.045221
+                _cons |   -.148707   .3661179    -0.41   0.685    -.8662848    .5688709
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m1 |  -.3788197   .2559726    -1.48   0.139    -.8805167    .1228773
+                _cons |  -2.534511   .7368008    -3.44   0.001    -3.978614   -1.090408
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 2.19                   Prob > chi2 = 0.1389
+
+Level 1
+logLike: -78.91048988834324
+AIC: 165.8209797766865
+pvalParam: 5.96841897450e-08
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -65.865399  
+Iteration 1:   log pseudolikelihood = -63.780822  
+Iteration 2:   log pseudolikelihood = -62.405375  
+Iteration 3:   log pseudolikelihood = -62.395345  
+Iteration 4:   log pseudolikelihood = -62.395341  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =      93.61
+Log pseudolikelihood = -62.39534                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m0 |
+lnalpha_hat_gnbreg_m1 |   .9237103   .1388569     6.65   0.000     .6515559    1.195865
+       dummyMuscles_2 |  -.0300748   .1172935    -0.26   0.798    -.2599657    .1998162
+       dummyMuscles_3 |  -.3222521    .107158    -3.01   0.003    -.5322779   -.1122264
+       dummyMuscles_4 |  -.0457906   .1077233    -0.43   0.671    -.2569244    .1653431
+       dummyMuscles_5 |   -.585379   .1357777    -4.31   0.000    -.8514985   -.3192595
+       dummyMuscles_6 |   .0585062    .187112     0.31   0.755    -.3082266     .425239
+                _cons |   .4524805   .3458482     1.31   0.191    -.2253695    1.130331
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m1 |  -.7245823   .2831731    -2.56   0.011    -1.279591   -.1695732
+       dummyMuscles_2 |  -.6044017   .1973688    -3.06   0.002    -.9912374    -.217566
+       dummyMuscles_3 |  -.1760384   .4350137    -0.40   0.686     -1.02865    .6765727
+       dummyMuscles_4 |  -.9742041   .3452504    -2.82   0.005    -1.650882   -.2975258
+       dummyMuscles_5 |  -.2406631   .4464132    -0.54   0.590    -1.115617    .6342908
+       dummyMuscles_6 |  -.3076225   .5242368    -0.59   0.557    -1.335108    .7198627
+                _cons |  -3.427123   .8256442    -4.15   0.000    -5.045356    -1.80889
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 19.49                  Prob > chi2 = 0.0034
+
+Level 2
+logLike: -62.39534057475147
+AIC: 152.7906811495029
+pvalParam: 2.27234697286e-07
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -60.636639  
+Iteration 1:   log pseudolikelihood = -57.238525  
+Iteration 2:   log pseudolikelihood = -54.839709  
+Iteration 3:   log pseudolikelihood = -54.818009  
+Iteration 4:   log pseudolikelihood = -54.817998  
+Iteration 5:   log pseudolikelihood = -54.817998  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =     258.92
+Log pseudolikelihood =   -54.818                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m0 |
+lnalpha_hat_gnbreg_m1 |   .7088621   .1042583     6.80   0.000     .5045196    .9132046
+       dummyMuscles_2 |   .1374297   .2128259     0.65   0.518    -.2797013    .5545608
+       dummyMuscles_3 |  -.5076424   .2037294    -2.49   0.013    -.9069447   -.1083401
+       dummyMuscles_4 |   .0547036   .1850743     0.30   0.768    -.3080353    .4174426
+       dummyMuscles_5 |  -.4862696     .14874    -3.27   0.001    -.7777947   -.1947445
+       dummyMuscles_6 |   .2823626   .3010702     0.94   0.348    -.3077241    .8724494
+ lnmean_hat_gnbreg_m1 |  -.7118983   .3278122    -2.17   0.030    -1.354398   -.0693982
+                _cons |    3.17843   1.424045     2.23   0.026     .3873524    5.969507
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m1 |   .4143524   .4200338     0.99   0.324    -.4088987    1.237604
+       dummyMuscles_2 |   -1.47348   .4810065    -3.06   0.002    -2.416235   -.5307244
+       dummyMuscles_3 |   .1415978   .4319354     0.33   0.743    -.7049801    .9881757
+       dummyMuscles_4 |  -1.375354    .378809    -3.63   0.000    -2.117806   -.6329015
+       dummyMuscles_5 |  -.9413959   .4573734    -2.06   0.040    -1.837831   -.0449605
+       dummyMuscles_6 |   -1.14698   .6390835    -1.79   0.073     -2.39956    .1056008
+ lnmean_hat_gnbreg_m1 |   3.045923   .8626466     3.53   0.000     1.355167     4.73668
+                _cons |   -14.5234   3.269298    -4.44   0.000    -20.93111   -8.115696
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 24.18                  Prob > chi2 = 0.0011
+
+Level 3
+logLike: -54.81799800565062
+AIC: 141.6359960113012
+pvalParam: .0298809260545315
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -59.793161  
+Iteration 1:   log pseudolikelihood = -59.649923  
+Iteration 2:   log pseudolikelihood =  -51.92971  
+Iteration 3:   log pseudolikelihood = -51.263253  
+Iteration 4:   log pseudolikelihood = -51.251812  
+Iteration 5:   log pseudolikelihood = -51.251808  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =     906.68
+Log pseudolikelihood = -51.25181                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+  lnalpha_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m0   |
+  lnalpha_hat_gnbreg_m1 |  -1.621172   1.901375    -0.85   0.394    -5.347797    2.105454
+         dummyMuscles_2 |   .2402609   .1950204     1.23   0.218     -.141972    .6224937
+         dummyMuscles_3 |  -.4454681   .1177256    -3.78   0.000    -.6762061   -.2147301
+         dummyMuscles_4 |   .1411112    .178887     0.79   0.430    -.2095007    .4917232
+         dummyMuscles_5 |  -.4579169   .1414238    -3.24   0.001    -.7351025   -.1807313
+         dummyMuscles_6 |   .3996642   .2810472     1.42   0.155    -.1511782    .9505065
+   lnmean_hat_gnbreg_m1 |   .4192898   .9987784     0.42   0.675     -1.53828     2.37686
+                        |
+ c.lnmean_hat_gnbreg_m1#|
+c.lnalpha_hat_gnbreg_m1 |    .491842   .4025837     1.22   0.222    -.2972075    1.280892
+                        |
+                  _cons |  -2.228506    4.72443    -0.47   0.637    -11.48822    7.031208
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+  lnalpha_hat_gnbreg_m1 |   14.02127   4.280736     3.28   0.001     5.631181    22.41136
+         dummyMuscles_2 |  -1.943838   .5580723    -3.48   0.000     -3.03764   -.8500367
+         dummyMuscles_3 |  -.1559203   .4554766    -0.34   0.732    -1.048638    .7367974
+         dummyMuscles_4 |  -1.502342   .4235453    -3.55   0.000    -2.332475   -.6722085
+         dummyMuscles_5 |  -1.273046   .5394976    -2.36   0.018    -2.330442   -.2156506
+         dummyMuscles_6 |  -1.733045   .6499887    -2.67   0.008    -3.006999   -.4590905
+   lnmean_hat_gnbreg_m1 |  -3.316917   1.772905    -1.87   0.061    -6.791747     .157912
+                        |
+ c.lnmean_hat_gnbreg_m1#|
+c.lnalpha_hat_gnbreg_m1 |  -2.741136   .8560328    -3.20   0.001    -4.418929   -1.063342
+                        |
+                  _cons |   17.38894   8.559448     2.03   0.042     .6127276    34.16515
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 27.01                  Prob > chi2 = 0.0007
+
+Level 4
+logLike: -51.25180820753069
+AIC: 138.5036164150614
+pvalParam: .2218159113556
+
+
+Predict lnmean 0 using 2
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  49.460576  
+Iteration 1:   log pseudolikelihood =  50.984346  
+Iteration 2:   log pseudolikelihood =  51.069484  
+Iteration 3:   log pseudolikelihood =  51.069654  
+Iteration 4:   log pseudolikelihood =  51.069654  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =     279.12
+Log pseudolikelihood =  51.06965                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m0 |
+lnmean_hat_gnbreg_m2 |   .4080713   .0244252    16.71   0.000     .3601988    .4559439
+               _cons |   3.082772    .070739    43.58   0.000     2.944126    3.221418
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m2 |   .1511281   .1968505     0.77   0.443    -.2346918    .5369481
+               _cons |  -4.226108   .6262331    -6.75   0.000    -5.453502   -2.998714
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 0.59                   Prob > chi2 = 0.4426
+
+Level 1
+logLike: 51.0696535393045
+AIC: -94.13930707860901
+pvalParam: 1.16632241619e-62
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  68.077703  
+Iteration 1:   log pseudolikelihood =   71.97183  
+Iteration 2:   log pseudolikelihood =   72.06474  
+Iteration 3:   log pseudolikelihood =  72.064873  
+Iteration 4:   log pseudolikelihood =  72.064873  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =     456.80
+Log pseudolikelihood =  72.06487                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m0 |
+lnmean_hat_gnbreg_m2 |   .4316997   .0362159    11.92   0.000     .3607178    .5026817
+      dummyMuscles_2 |   .1077512   .0439858     2.45   0.014     .0215405    .1939619
+      dummyMuscles_3 |   .1591234   .0347384     4.58   0.000     .0910373    .2272094
+      dummyMuscles_4 |   .1073091   .0491915     2.18   0.029     .0108955    .2037227
+      dummyMuscles_5 |   .1836761   .0493592     3.72   0.000     .0869338    .2804184
+      dummyMuscles_6 |  -.0550315   .0517651    -1.06   0.288    -.1564892    .0464263
+               _cons |   2.922029   .0959254    30.46   0.000     2.734018    3.110039
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m2 |  -.0860752   .2419117    -0.36   0.722    -.5602134     .388063
+      dummyMuscles_2 |   .3179613   .3847534     0.83   0.409    -.4361415    1.072064
+      dummyMuscles_3 |  -.2423501   .4634545    -0.52   0.601    -1.150704    .6660041
+      dummyMuscles_4 |  -.3470845   .5334625    -0.65   0.515    -1.392652    .6984827
+      dummyMuscles_5 |  -.3563661    .512578    -0.70   0.487    -1.361001    .6482684
+      dummyMuscles_6 |  -.0710997   .5744821    -0.12   0.902    -1.197064    1.054865
+               _cons |  -3.705309   .8239119    -4.50   0.000    -5.320147   -2.090471
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 7.10                   Prob > chi2 = 0.3119
+
+Level 2
+logLike: 72.0648732590694
+AIC: -116.1297465181388
+pvalParam: 2.36916532123e-13
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  70.584317  
+Iteration 1:   log pseudolikelihood =  75.257258  
+Iteration 2:   log pseudolikelihood =  75.500943  
+Iteration 3:   log pseudolikelihood =  75.501422  
+Iteration 4:   log pseudolikelihood =  75.501422  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =    1129.45
+Log pseudolikelihood =  75.50142                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+ lnmean_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m0  |
+ lnmean_hat_gnbreg_m2 |   .3279268   .0472041     6.95   0.000     .2354085    .4204451
+       dummyMuscles_2 |   .1260511   .0413303     3.05   0.002     .0450452    .2070569
+       dummyMuscles_3 |   .1724118   .0356779     4.83   0.000     .1024844    .2423391
+       dummyMuscles_4 |   .1073363   .0429638     2.50   0.012     .0231288    .1915437
+       dummyMuscles_5 |   .2184837   .0596479     3.66   0.000      .101576    .3353914
+       dummyMuscles_6 |  -.0688911   .0525491    -1.31   0.190    -.1718856    .0341033
+lnalpha_hat_gnbreg_m2 |  -.0834617   .0328855    -2.54   0.011    -.1479162   -.0190073
+                _cons |   3.150519   .1070831    29.42   0.000      2.94064    3.360398
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+ lnmean_hat_gnbreg_m2 |  -.3962727   .4606865    -0.86   0.390    -1.299202    .5066562
+       dummyMuscles_2 |   .5173799   .4546634     1.14   0.255    -.3737439    1.408504
+       dummyMuscles_3 |  -.2893165   .4847749    -0.60   0.551    -1.239458    .6608249
+       dummyMuscles_4 |  -.3795137   .6056336    -0.63   0.531    -1.566534    .8075064
+       dummyMuscles_5 |   .0593954   .5802397     0.10   0.918    -1.077853    1.196644
+       dummyMuscles_6 |   .1056325   .6198252     0.17   0.865    -1.109203    1.320468
+lnalpha_hat_gnbreg_m2 |   -.172787   .3590203    -0.48   0.630    -.8764538    .5308798
+                _cons |   -3.08261   1.130034    -2.73   0.006    -5.297435   -.8677846
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 14.35                  Prob > chi2 = 0.0452
+
+Level 3
+logLike: 75.50142222516942
+AIC: -119.0028444503388
+pvalParam: .0111504451287391
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =   67.02806  
+Iteration 1:   log pseudolikelihood =  76.216557  
+Iteration 2:   log pseudolikelihood =  77.053842  
+Iteration 3:   log pseudolikelihood =  77.057039  
+Iteration 4:   log pseudolikelihood =   77.05704  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =    1073.23
+Log pseudolikelihood =  77.05704                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+   lnmean_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m0    |
+   lnmean_hat_gnbreg_m2 |   .3083588   .0518182     5.95   0.000      .206797    .4099205
+         dummyMuscles_2 |   .1457989   .0537852     2.71   0.007     .0403819     .251216
+         dummyMuscles_3 |   .2050412   .0401365     5.11   0.000      .126375    .2837073
+         dummyMuscles_4 |   .1305334   .0486577     2.68   0.007     .0351661    .2259007
+         dummyMuscles_5 |   .2464592    .066316     3.72   0.000     .1164823    .3764361
+         dummyMuscles_6 |  -.0471896   .0655087    -0.72   0.471    -.1755842     .081205
+  lnalpha_hat_gnbreg_m2 |  -.0378694   .1078877    -0.35   0.726    -.2493255    .1735866
+                        |
+ c.lnmean_hat_gnbreg_m2#|
+c.lnalpha_hat_gnbreg_m2 |  -.0122101   .0294122    -0.42   0.678     -.069857    .0454368
+                        |
+                  _cons |   3.194605   .1196718    26.69   0.000     2.960052    3.429157
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+   lnmean_hat_gnbreg_m2 |  -.2482118   .5061991    -0.49   0.624    -1.240344    .7439201
+         dummyMuscles_2 |   .3483067   .5108662     0.68   0.495    -.6529727    1.349586
+         dummyMuscles_3 |  -.2009248   .5789875    -0.35   0.729    -1.335719    .9338699
+         dummyMuscles_4 |  -.1934766   .6248743    -0.31   0.757    -1.418208    1.031254
+         dummyMuscles_5 |   .0306812   .5943114     0.05   0.959    -1.134148     1.19551
+         dummyMuscles_6 |  -.1561413   .6006695    -0.26   0.795    -1.333432    1.021149
+  lnalpha_hat_gnbreg_m2 |   1.483825   1.124168     1.32   0.187     -.719504    3.687154
+                        |
+ c.lnmean_hat_gnbreg_m2#|
+c.lnalpha_hat_gnbreg_m2 |  -.4355437   .3017807    -1.44   0.149    -1.027023    .1559356
+                        |
+                  _cons |  -3.457951   1.319571    -2.62   0.009    -6.044263   -.8716393
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 10.79                  Prob > chi2 = 0.2139
+
+Level 4
+logLike: 77.05704010072597
+AIC: -118.1140802014519
+pvalParam: .6780418444505067
+
+
+Predict lnalpha 0 using 2
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -81.567436  
+Iteration 1:   log pseudolikelihood = -79.717665  
+Iteration 2:   log pseudolikelihood = -79.667212  
+Iteration 3:   log pseudolikelihood = -79.667185  
+Iteration 4:   log pseudolikelihood = -79.667185  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =      26.23
+Log pseudolikelihood = -79.66719                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m0 |
+lnalpha_hat_gnbreg_m2 |   .3542542   .0691719     5.12   0.000     .2186797    .4898286
+                _cons |  -1.909259   .0585419   -32.61   0.000    -2.023999   -1.794519
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m2 |  -.4815636   .1207448    -3.99   0.000    -.7182189   -.2449082
+                _cons |  -2.021774   .1748129   -11.57   0.000    -2.364401   -1.679147
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 15.91                  Prob > chi2 = 0.0001
+
+Level 1
+logLike: -79.66718507568501
+AIC: 167.33437015137
+pvalParam: 3.03340637683e-07
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -64.961452  
+Iteration 1:   log pseudolikelihood = -60.955667  
+Iteration 2:   log pseudolikelihood = -60.302287  
+Iteration 3:   log pseudolikelihood = -60.301289  
+Iteration 4:   log pseudolikelihood = -60.301289  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =      43.63
+Log pseudolikelihood = -60.30129                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m0 |
+lnalpha_hat_gnbreg_m2 |   .5191885   .1327288     3.91   0.000     .2590448    .7793322
+       dummyMuscles_2 |   .3640294   .1562388     2.33   0.020     .0578069    .6702518
+       dummyMuscles_3 |  -.3388633    .130007    -2.61   0.009    -.5936722   -.0840543
+       dummyMuscles_4 |  -.1239406   .1263949    -0.98   0.327      -.37167    .1237888
+       dummyMuscles_5 |  -.3137372   .1645602    -1.91   0.057    -.6362693    .0087949
+       dummyMuscles_6 |   .4127624   .2440882     1.69   0.091    -.0656416    .8911664
+                _cons |  -1.710023   .1277804   -13.38   0.000    -1.960468   -1.459578
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m2 |  -.3023578   .3175356    -0.95   0.341    -.9247161    .3200005
+       dummyMuscles_2 |  -.2004455   .4869953    -0.41   0.681    -1.154939    .7540478
+       dummyMuscles_3 |   -.028665   .3495539    -0.08   0.935    -.7137781    .6564481
+       dummyMuscles_4 |    -.81863   .3982615    -2.06   0.040    -1.599208   -.0380519
+       dummyMuscles_5 |   -.125578   .4376988    -0.29   0.774     -.983452    .7322959
+       dummyMuscles_6 |  -.3187561   .5840053    -0.55   0.585    -1.463385    .8258732
+                _cons |  -1.896427   .4123298    -4.60   0.000    -2.704579   -1.088276
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 18.59                  Prob > chi2 = 0.0049
+
+Level 2
+logLike: -60.30128864479398
+AIC: 148.6025772895879
+pvalParam: 7.67387361845e-07
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -61.650732  
+Iteration 1:   log pseudolikelihood = -57.836446  
+Iteration 2:   log pseudolikelihood = -57.272778  
+Iteration 3:   log pseudolikelihood = -57.272434  
+Iteration 4:   log pseudolikelihood = -57.272434  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =      72.60
+Log pseudolikelihood = -57.27243                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m0 |
+lnalpha_hat_gnbreg_m2 |   .6802046   .1167951     5.82   0.000     .4512904    .9091188
+       dummyMuscles_2 |   .2579083   .1637884     1.57   0.115    -.0631111    .5789277
+       dummyMuscles_3 |  -.3912193   .1294818    -3.02   0.003     -.644999   -.1374397
+       dummyMuscles_4 |  -.1507273   .1192101    -1.26   0.206    -.3843749    .0829203
+       dummyMuscles_5 |  -.4105073   .1878376    -2.19   0.029    -.7786621   -.0423525
+       dummyMuscles_6 |   .3533434    .247268     1.43   0.153     -.131293    .8379798
+ lnmean_hat_gnbreg_m2 |   .2805148   .0800401     3.50   0.000     .1236391    .4373906
+                _cons |  -2.373046   .2216735   -10.71   0.000    -2.807518   -1.938574
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m2 |   .0158375   .4966459     0.03   0.975    -.9575705    .9892456
+       dummyMuscles_2 |   -.397618   .4937554    -0.81   0.421    -1.365361    .5701248
+       dummyMuscles_3 |  -.1488862   .3572242    -0.42   0.677    -.8490328    .5512604
+       dummyMuscles_4 |  -.9635155   .2936467    -3.28   0.001    -1.539052   -.3879785
+       dummyMuscles_5 |  -.1672199   .4308124    -0.39   0.698    -1.011597    .6771568
+       dummyMuscles_6 |  -.4148796   .5800613    -0.72   0.474    -1.551779    .7220198
+ lnmean_hat_gnbreg_m2 |   .6226425   .6600427     0.94   0.346    -.6710175    1.916302
+                _cons |  -3.493428   1.688859    -2.07   0.039     -6.80353   -.1833256
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 38.45                  Prob > chi2 = 0.0000
+
+Level 3
+logLike: -57.27243449146608
+AIC: 146.5448689829321
+pvalParam: .0004571594374954
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  -61.92287  
+Iteration 1:   log pseudolikelihood = -57.810724  
+Iteration 2:   log pseudolikelihood = -56.855502  
+Iteration 3:   log pseudolikelihood = -56.852982  
+Iteration 4:   log pseudolikelihood = -56.852982  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =     170.17
+Log pseudolikelihood = -56.85298                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+  lnalpha_hat_gnbreg_m0 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m0   |
+  lnalpha_hat_gnbreg_m2 |   .5089267   .1711017     2.97   0.003     .1735735    .8442799
+         dummyMuscles_2 |   .2938857   .1721213     1.71   0.088    -.0434658    .6312372
+         dummyMuscles_3 |  -.3826749   .1402596    -2.73   0.006    -.6575785   -.1077712
+         dummyMuscles_4 |  -.1671801   .1194284    -1.40   0.162    -.4012554    .0668953
+         dummyMuscles_5 |  -.3982804   .1914421    -2.08   0.037    -.7735001   -.0230607
+         dummyMuscles_6 |   .4285423   .3059325     1.40   0.161    -.1710745    1.028159
+   lnmean_hat_gnbreg_m2 |   .2805834   .0767928     3.65   0.000     .1300722    .4310946
+                        |
+ c.lnmean_hat_gnbreg_m2#|
+c.lnalpha_hat_gnbreg_m2 |    .054925   .0686699     0.80   0.424    -.0796656    .1895155
+                        |
+                  _cons |  -2.363312    .204814   -11.54   0.000     -2.76474   -1.961884
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+  lnalpha_hat_gnbreg_m2 |  -.4368017   1.424011    -0.31   0.759    -3.227812    2.354208
+         dummyMuscles_2 |  -.2732923   .5707589    -0.48   0.632    -1.391959    .8453746
+         dummyMuscles_3 |  -.0867164   .3120146    -0.28   0.781    -.6982537    .5248209
+         dummyMuscles_4 |  -.9541694   .3082202    -3.10   0.002     -1.55827    -.350069
+         dummyMuscles_5 |  -.1177268   .4232248    -0.28   0.781    -.9472321    .7117785
+         dummyMuscles_6 |   -.164478   .6580991    -0.25   0.803    -1.454329    1.125373
+   lnmean_hat_gnbreg_m2 |    .763012   .7085593     1.08   0.282    -.6257387    2.151763
+                        |
+ c.lnmean_hat_gnbreg_m2#|
+c.lnalpha_hat_gnbreg_m2 |   .1611799   .3976467     0.41   0.685    -.6181934    .9405532
+                        |
+                  _cons |  -3.885164   1.820487    -2.13   0.033    -7.453253    -.317075
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 24.31                  Prob > chi2 = 0.0020
+
+Level 4
+logLike: -56.85298197400734
+AIC: 149.7059639480147
+pvalParam: .4238031458403161
+
+
+Predict lnmean 1 using 0
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  28.588893  
+Iteration 1:   log pseudolikelihood =   28.88848  
+Iteration 2:   log pseudolikelihood =  28.889988  
+Iteration 3:   log pseudolikelihood =  28.889988  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =      81.75
+Log pseudolikelihood =  28.88999                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m1 |
+lnmean_hat_gnbreg_m0 |   .6006011   .0664262     9.04   0.000     .4704082    .7307941
+               _cons |   2.153052   .3019804     7.13   0.000     1.561181    2.744923
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m0 |  -.2186484   .4153474    -0.53   0.599    -1.032714    .5954175
+               _cons |   -2.38005   1.858386    -1.28   0.200    -6.022419     1.26232
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 0.28                   Prob > chi2 = 0.5986
+
+Level 1
+logLike: 28.88998771581557
+AIC: -49.77997543163114
+pvalParam: 1.54350608378e-19
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  83.880873  
+Iteration 1:   log pseudolikelihood =  87.522878  
+Iteration 2:   log pseudolikelihood =  89.708084  
+Iteration 3:   log pseudolikelihood =  89.719296  
+Iteration 4:   log pseudolikelihood =    89.7193  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =     499.90
+Log pseudolikelihood =   89.7193                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m1 |
+lnmean_hat_gnbreg_m0 |   .5004532   .0499806    10.01   0.000      .402493    .5984134
+      dummyMuscles_2 |   .1151717    .033007     3.49   0.000     .0504791    .1798643
+      dummyMuscles_3 |  -.1166978   .0346645    -3.37   0.001    -.1846389   -.0487566
+      dummyMuscles_4 |    .097982   .0296042     3.31   0.001     .0399588    .1560051
+      dummyMuscles_5 |  -.1179248   .0409938    -2.88   0.004    -.1982713   -.0375784
+      dummyMuscles_6 |   .2903861    .034237     8.48   0.000     .2232828    .3574893
+               _cons |   2.552024   .2309301    11.05   0.000     2.099409    3.004638
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m0 |  -1.272472   .5596802    -2.27   0.023    -2.369425   -.1755191
+      dummyMuscles_2 |   .3213941   .4147117     0.77   0.438    -.4914259    1.134214
+      dummyMuscles_3 |   .5000865   .4883582     1.02   0.306    -.4570781    1.457251
+      dummyMuscles_4 |  -.9932622   .3995375    -2.49   0.013    -1.776341   -.2101831
+      dummyMuscles_5 |   .8937363   .5202503     1.72   0.086    -.1259356    1.913408
+      dummyMuscles_6 |   .1229777   .4960254     0.25   0.804    -.8492142     1.09517
+               _cons |   1.061382   2.263706     0.47   0.639    -3.375399    5.498164
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 53.00                  Prob > chi2 = 0.0000
+
+Level 2
+logLike: 89.71929964490074
+AIC: -151.4385992898015
+pvalParam: 3.84526022543e-53
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  86.087216  
+Iteration 1:   log pseudolikelihood =  89.757829  
+Iteration 2:   log pseudolikelihood =  90.856051  
+Iteration 3:   log pseudolikelihood =  90.861005  
+Iteration 4:   log pseudolikelihood =  90.861006  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =     526.45
+Log pseudolikelihood =  90.86101                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+ lnmean_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m1  |
+ lnmean_hat_gnbreg_m0 |   .5759713    .072504     7.94   0.000     .4338661    .7180764
+       dummyMuscles_2 |   .0838707   .0380639     2.20   0.028     .0092667    .1584746
+       dummyMuscles_3 |  -.1172916   .0349717    -3.35   0.001     -.185835   -.0487483
+       dummyMuscles_4 |   .0920205   .0356047     2.58   0.010     .0222367    .1618044
+       dummyMuscles_5 |  -.1298307   .0426661    -3.04   0.002    -.2134547   -.0462068
+       dummyMuscles_6 |   .2772061   .0366444     7.56   0.000     .2053844    .3490278
+lnalpha_hat_gnbreg_m0 |   .0406706   .0358077     1.14   0.256    -.0295112    .1108524
+                _cons |   2.324709    .262513     8.86   0.000     1.810193    2.839225
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+ lnmean_hat_gnbreg_m0 |  -1.265736   .5162702    -2.45   0.014    -2.277607   -.2538645
+       dummyMuscles_2 |   .3149185   .2774059     1.14   0.256     -.228787     .858624
+       dummyMuscles_3 |   .5168634   .4620549     1.12   0.263    -.3887475    1.422474
+       dummyMuscles_4 |   -.678628   .4340358    -1.56   0.118    -1.529323    .1720665
+       dummyMuscles_5 |   .9739311   .4173828     2.33   0.020     .1558759    1.791986
+       dummyMuscles_6 |   .1531114   .5275453     0.29   0.772    -.8808584    1.187081
+lnalpha_hat_gnbreg_m0 |   .0023507   .3186266     0.01   0.994     -.622146    .6268473
+                _cons |   .9445869   1.962644     0.48   0.630    -2.902125    4.791299
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 23.03                  Prob > chi2 = 0.0017
+
+Level 3
+logLike: 90.86100629100035
+AIC: -149.7220125820007
+pvalParam: .2560378581321793
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  86.746227  
+Iteration 1:   log pseudolikelihood =  91.868393  
+Iteration 2:   log pseudolikelihood =  92.537259  
+Iteration 3:   log pseudolikelihood =  92.537914  
+Iteration 4:   log pseudolikelihood =  92.537914  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =     540.00
+Log pseudolikelihood =  92.53791                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+   lnmean_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m1    |
+   lnmean_hat_gnbreg_m0 |   .6773677   .2574887     2.63   0.009     .1726992    1.182036
+         dummyMuscles_2 |   .0830395   .0449428     1.85   0.065    -.0050469    .1711258
+         dummyMuscles_3 |   -.130518   .0356085    -3.67   0.000    -.2003093   -.0607267
+         dummyMuscles_4 |   .0904461   .0419167     2.16   0.031     .0082908    .1726014
+         dummyMuscles_5 |  -.1390124   .0496682    -2.80   0.005    -.2363602   -.0416646
+         dummyMuscles_6 |   .2750222   .0389221     7.07   0.000     .1987364     .351308
+  lnalpha_hat_gnbreg_m0 |  -.1788669   .4327062    -0.41   0.679    -1.026955    .6692216
+                        |
+ c.lnmean_hat_gnbreg_m0#|
+c.lnalpha_hat_gnbreg_m0 |   .0468122   .0954622     0.49   0.624    -.1402903    .2339147
+                        |
+                  _cons |   1.853995   1.129892     1.64   0.101    -.3605529    4.068542
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+   lnmean_hat_gnbreg_m0 |  -3.850486   1.376426    -2.80   0.005    -6.548231   -1.152742
+         dummyMuscles_2 |   .4091102   .3188775     1.28   0.200    -.2158782    1.034099
+         dummyMuscles_3 |   .7649901   .4413065     1.73   0.083    -.0999548    1.629935
+         dummyMuscles_4 |  -.4232876   .5688596    -0.74   0.457    -1.538232    .6916568
+         dummyMuscles_5 |   1.075666   .4123277     2.61   0.009      .267519    1.883814
+         dummyMuscles_6 |   .0584175   .4774238     0.12   0.903    -.8773159     .994151
+  lnalpha_hat_gnbreg_m0 |   6.221718    3.16182     1.97   0.049      .024665    12.41877
+                        |
+ c.lnmean_hat_gnbreg_m0#|
+c.lnalpha_hat_gnbreg_m0 |  -1.331621   .6702964    -1.99   0.047    -2.645378   -.0178642
+                        |
+                  _cons |   12.88288   6.278253     2.05   0.040     .5777316    25.18803
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 41.65                  Prob > chi2 = 0.0000
+
+Level 4
+logLike: 92.53791425956773
+AIC: -149.0758285191355
+pvalParam: .6238691637954634
+
+
+Predict lnalpha 1 using 0
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -44.309313  
+Iteration 1:   log pseudolikelihood = -43.305612  
+Iteration 2:   log pseudolikelihood = -43.304457  
+Iteration 3:   log pseudolikelihood = -43.304457  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =      56.51
+Log pseudolikelihood = -43.30446                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m1 |
+lnalpha_hat_gnbreg_m0 |   .4115441   .0547457     7.52   0.000     .3042445    .5188437
+                _cons |  -1.888786   .1192309   -15.84   0.000    -2.122474   -1.655097
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m0 |  -.5295966   .2741193    -1.93   0.053     -1.06686    .0076673
+                _cons |  -3.317336   .6211367    -5.34   0.000    -4.534742    -2.09993
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 3.73                   Prob > chi2 = 0.0534
+
+Level 1
+logLike: -43.30445714815333
+AIC: 94.60891429630665
+pvalParam: 5.58858385229e-14
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =   -22.5256  
+Iteration 1:   log pseudolikelihood = -18.574515  
+Iteration 2:   log pseudolikelihood = -18.296894  
+Iteration 3:   log pseudolikelihood = -18.296228  
+Iteration 4:   log pseudolikelihood = -18.296227  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =     113.98
+Log pseudolikelihood = -18.29623                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m1 |
+lnalpha_hat_gnbreg_m0 |   .4277402   .0486786     8.79   0.000     .3323318    .5231486
+       dummyMuscles_2 |  -.0038419   .0762083    -0.05   0.960    -.1532075    .1455236
+       dummyMuscles_3 |   .1369632   .1022898     1.34   0.181    -.0635212    .3374476
+       dummyMuscles_4 |  -.1523652   .0784795    -1.94   0.052    -.3061821    .0014517
+       dummyMuscles_5 |   .3247725   .0884676     3.67   0.000     .1513791    .4981658
+       dummyMuscles_6 |  -.3062965   .1017891    -3.01   0.003    -.5057995   -.1067935
+                _cons |  -1.850084   .1097073   -16.86   0.000    -2.065107   -1.635062
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m0 |  -.3092668    .192539    -1.61   0.108    -.6866364    .0681028
+       dummyMuscles_2 |  -.0303995   .4610675    -0.07   0.947    -.9340751    .8732762
+       dummyMuscles_3 |   .3953749   .2909066     1.36   0.174    -.1747915    .9655412
+       dummyMuscles_4 |   .2204274   .3268529     0.67   0.500    -.4201926    .8610473
+       dummyMuscles_5 |   .6161873   .4023965     1.53   0.126    -.1724954     1.40487
+       dummyMuscles_6 |   1.032335   .4087654     2.53   0.012       .23117    1.833501
+                _cons |  -3.612855   .5004488    -7.22   0.000    -4.593717   -2.631993
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 29.11                  Prob > chi2 = 0.0001
+
+Level 2
+logLike: -18.29622749532493
+AIC: 64.59245499064986
+pvalParam: 2.84622923058e-07
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -22.110813  
+Iteration 1:   log pseudolikelihood = -17.729071  
+Iteration 2:   log pseudolikelihood = -17.073634  
+Iteration 3:   log pseudolikelihood =  -17.07131  
+Iteration 4:   log pseudolikelihood =  -17.07131  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =      78.90
+Log pseudolikelihood = -17.07131                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m1 |
+lnalpha_hat_gnbreg_m0 |   .3996705   .0715545     5.59   0.000     .2594262    .5399148
+       dummyMuscles_2 |   .0199881   .1232194     0.16   0.871    -.2215175    .2614937
+       dummyMuscles_3 |   .1063915   .0966007     1.10   0.271    -.0829424    .2957254
+       dummyMuscles_4 |  -.1107929   .0943636    -1.17   0.240    -.2957421    .0741563
+       dummyMuscles_5 |   .3291109   .1168864     2.82   0.005     .1000177    .5582041
+       dummyMuscles_6 |  -.3112023   .1106653    -2.81   0.005    -.5281024   -.0943023
+ lnmean_hat_gnbreg_m0 |  -.0450081     .19436    -0.23   0.817    -.4259468    .3359306
+                _cons |  -1.724161   .7008579    -2.46   0.014    -3.097817   -.3505046
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m0 |  -.7694186    .363777    -2.12   0.034    -1.482408   -.0564289
+       dummyMuscles_2 |   .5857812   .5833861     1.00   0.315    -.5576346    1.729197
+       dummyMuscles_3 |   .4577358    .342981     1.33   0.182    -.2144946    1.129966
+       dummyMuscles_4 |   .4648445   .3413212     1.36   0.173    -.2041328    1.133822
+       dummyMuscles_5 |   1.073679   .4843318     2.22   0.027     .1244057    2.022951
+       dummyMuscles_6 |   1.378803   .4387236     3.14   0.002     .5189205    2.238685
+ lnmean_hat_gnbreg_m0 |  -1.391355     .76641    -1.82   0.069    -2.893491    .1107815
+                _cons |    1.13975   2.595336     0.44   0.661    -3.947016    6.226516
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 28.71                  Prob > chi2 = 0.0002
+
+Level 3
+logLike: -17.07130973700817
+AIC: 66.14261947401634
+pvalParam: .8168713682651513
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -20.750618  
+Iteration 1:   log pseudolikelihood = -16.850962  
+Iteration 2:   log pseudolikelihood = -16.388981  
+Iteration 3:   log pseudolikelihood = -16.387336  
+Iteration 4:   log pseudolikelihood = -16.387335  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =     110.16
+Log pseudolikelihood = -16.38734                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+  lnalpha_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m1   |
+  lnalpha_hat_gnbreg_m0 |   -.389916   .6829868    -0.57   0.568    -1.728546    .9487135
+         dummyMuscles_2 |  -.0019215   .1183264    -0.02   0.987    -.2338371    .2299941
+         dummyMuscles_3 |   .0784884   .1021412     0.77   0.442    -.1217045    .2786814
+         dummyMuscles_4 |    -.14935   .1037592    -1.44   0.150    -.3527143    .0540144
+         dummyMuscles_5 |   .3024065   .1079225     2.80   0.005     .0908824    .5139307
+         dummyMuscles_6 |  -.3337689   .1098705    -3.04   0.002    -.5491111   -.1184268
+   lnmean_hat_gnbreg_m0 |   .3271609   .3186541     1.03   0.305    -.2973896    .9517113
+                        |
+ c.lnmean_hat_gnbreg_m0#|
+c.lnalpha_hat_gnbreg_m0 |   .1735442   .1496056     1.16   0.246    -.1196774    .4667658
+                        |
+                  _cons |   -3.38092   1.356334    -2.49   0.013    -6.039286   -.7225541
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+  lnalpha_hat_gnbreg_m0 |   .1403884    4.06837     0.03   0.972    -7.833471    8.114247
+         dummyMuscles_2 |   .7374581   .6759962     1.09   0.275    -.5874701    2.062386
+         dummyMuscles_3 |   .6862256   .4017999     1.71   0.088    -.1012877    1.473739
+         dummyMuscles_4 |   .6800834   .3787207     1.80   0.073    -.0621956    1.422362
+         dummyMuscles_5 |   1.220896   .5239109     2.33   0.020     .1940499    2.247743
+         dummyMuscles_6 |   1.500363    .524458     2.86   0.004     .4724445    2.528282
+   lnmean_hat_gnbreg_m0 |  -1.818599   1.482936    -1.23   0.220    -4.725099    1.087902
+                        |
+ c.lnmean_hat_gnbreg_m0#|
+c.lnalpha_hat_gnbreg_m0 |  -.1988291   .8358481    -0.24   0.812    -1.837061    1.439403
+                        |
+                  _cons |   2.923893   7.083134     0.41   0.680    -10.95879    16.80658
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 39.97                  Prob > chi2 = 0.0000
+
+Level 4
+logLike: -16.38733548340425
+AIC: 68.77467096680851
+pvalParam: .2460440823640482
+
+
+Predict lnmean 1 using 2
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  70.205612  
+Iteration 1:   log pseudolikelihood =  70.239216  
+Iteration 2:   log pseudolikelihood =  70.239228  
+Iteration 3:   log pseudolikelihood =  70.239228  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =     239.96
+Log pseudolikelihood =  70.23923                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m1 |
+lnmean_hat_gnbreg_m2 |   .3853264    .024875    15.49   0.000     .3365723    .4340804
+               _cons |   3.547544   .0837935    42.34   0.000     3.383312    3.711776
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m2 |  -.2059633   .2759314    -0.75   0.455     -.746779    .3348523
+               _cons |  -3.399257   .8453618    -4.02   0.000    -5.056135   -1.742378
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 0.56                   Prob > chi2 = 0.4554
+
+Level 1
+logLike: 70.23922831233115
+AIC: -132.4784566246623
+pvalParam: 4.02001663420e-54
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  110.85335  
+Iteration 1:   log pseudolikelihood =  114.82874  
+Iteration 2:   log pseudolikelihood =   114.9516  
+Iteration 3:   log pseudolikelihood =  114.95187  
+Iteration 4:   log pseudolikelihood =  114.95187  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =     717.21
+Log pseudolikelihood =  114.9519                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m1 |
+lnmean_hat_gnbreg_m2 |   .3425421   .0152357    22.48   0.000     .3126807    .3724035
+      dummyMuscles_2 |   .0801321   .0261129     3.07   0.002     .0289518    .1313124
+      dummyMuscles_3 |  -.0543573   .0305955    -1.78   0.076    -.1143235    .0056088
+      dummyMuscles_4 |   .1437637   .0348716     4.12   0.000     .0754167    .2121107
+      dummyMuscles_5 |  -.0842377     .03517    -2.40   0.017    -.1531698   -.0153057
+      dummyMuscles_6 |   .1560021   .0300319     5.19   0.000     .0971406    .2148635
+               _cons |   3.647303   .0522045    69.87   0.000     3.544984    3.749622
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m2 |   .2162604   .3381476     0.64   0.522    -.4464968    .8790175
+      dummyMuscles_2 |  -1.390831   .4767367    -2.92   0.004    -2.325218   -.4564445
+      dummyMuscles_3 |   .2923219   .4593399     0.64   0.525    -.6079677    1.192611
+      dummyMuscles_4 |  -.0094224   .5770767    -0.02   0.987    -1.140472    1.121627
+      dummyMuscles_5 |   .4424872   .4673388     0.95   0.344    -.4734801    1.358454
+      dummyMuscles_6 |   -1.07566   .6687318    -1.61   0.108     -2.38635    .2350303
+               _cons |  -5.268821   1.035597    -5.09   0.000    -7.298553   -3.239088
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 66.04                  Prob > chi2 = 0.0000
+
+Level 2
+logLike: 114.9518657863557
+AIC: -201.9037315727114
+pvalParam: 3.06241076233e-19
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  114.17485  
+Iteration 1:   log pseudolikelihood =  118.68366  
+Iteration 2:   log pseudolikelihood =  119.73098  
+Iteration 3:   log pseudolikelihood =  119.73681  
+Iteration 4:   log pseudolikelihood =  119.73682  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =     801.52
+Log pseudolikelihood =  119.7368                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+ lnmean_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m1  |
+ lnmean_hat_gnbreg_m2 |   .2403165   .0393531     6.11   0.000     .1631858    .3174471
+       dummyMuscles_2 |   .1218239   .0300327     4.06   0.000     .0629609    .1806869
+       dummyMuscles_3 |  -.0253944   .0332785    -0.76   0.445    -.0906192    .0398303
+       dummyMuscles_4 |    .135149   .0323019     4.18   0.000     .0718385    .1984596
+       dummyMuscles_5 |  -.0242357   .0417334    -0.58   0.561    -.1060316    .0575602
+       dummyMuscles_6 |    .170835   .0262742     6.50   0.000     .1193384    .2223316
+lnalpha_hat_gnbreg_m2 |  -.0628608   .0238006    -2.64   0.008    -.1095091   -.0162124
+                _cons |   3.883868   .0962701    40.34   0.000     3.695182    4.072553
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+ lnmean_hat_gnbreg_m2 |  -.6814399   .5755204    -1.18   0.236    -1.809439    .4465594
+       dummyMuscles_2 |  -.8391059   .5449485    -1.54   0.124    -1.907185    .2289735
+       dummyMuscles_3 |    .781641   .4811605     1.62   0.104    -.1614162    1.724698
+       dummyMuscles_4 |  -.2245757   .6736931    -0.33   0.739     -1.54499    1.095839
+       dummyMuscles_5 |   1.055435   .4270926     2.47   0.013     .2183485    1.892521
+       dummyMuscles_6 |  -1.197644   .6334533    -1.89   0.059    -2.439189    .0439022
+lnalpha_hat_gnbreg_m2 |  -.6246119   .4926949    -1.27   0.205    -1.590276    .3410524
+                _cons |  -3.402471   1.342067    -2.54   0.011    -6.032875   -.7720674
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 66.20                  Prob > chi2 = 0.0000
+
+Level 3
+logLike: 119.7368150142324
+AIC: -207.4736300284649
+pvalParam: .0082627433642323
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  106.13723  
+Iteration 1:   log pseudolikelihood =  117.65778  
+Iteration 2:   log pseudolikelihood =  119.97507  
+Iteration 3:   log pseudolikelihood =  120.00158  
+Iteration 4:   log pseudolikelihood =  120.00162  
+Iteration 5:   log pseudolikelihood =  120.00162  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =     716.26
+Log pseudolikelihood =  120.0016                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+   lnmean_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m1    |
+   lnmean_hat_gnbreg_m2 |   .2320495   .0406537     5.71   0.000     .1523698    .3117293
+         dummyMuscles_2 |   .1218972   .0321329     3.79   0.000     .0589178    .1848766
+         dummyMuscles_3 |  -.0263937   .0342841    -0.77   0.441    -.0935893     .040802
+         dummyMuscles_4 |   .1381631   .0326277     4.23   0.000      .074214    .2021123
+         dummyMuscles_5 |  -.0250538   .0435418    -0.58   0.565    -.1103943    .0602866
+         dummyMuscles_6 |   .1716484   .0261828     6.56   0.000     .1203311    .2229657
+  lnalpha_hat_gnbreg_m2 |  -.0627212    .095825    -0.65   0.513    -.2505347    .1250924
+                        |
+ c.lnmean_hat_gnbreg_m2#|
+c.lnalpha_hat_gnbreg_m2 |  -.0007357   .0228572    -0.03   0.974    -.0455349    .0440635
+                        |
+                  _cons |   3.907885   .1026756    38.06   0.000     3.706645    4.109126
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+   lnmean_hat_gnbreg_m2 |  -.6176175   .7321317    -0.84   0.399    -2.052569    .8173343
+         dummyMuscles_2 |  -.8938393   .5952083    -1.50   0.133    -2.060426    .2727476
+         dummyMuscles_3 |   .6652604   .5191028     1.28   0.200    -.3521624    1.682683
+         dummyMuscles_4 |  -.2913633    .577744    -0.50   0.614    -1.423721    .8409941
+         dummyMuscles_5 |   .9776825   .4318474     2.26   0.024     .1312772    1.824088
+         dummyMuscles_6 |   -1.42148   .7266462    -1.96   0.050     -2.84568    .0027204
+  lnalpha_hat_gnbreg_m2 |   .1028526   1.098066     0.09   0.925    -2.049318    2.255023
+                        |
+ c.lnmean_hat_gnbreg_m2#|
+c.lnalpha_hat_gnbreg_m2 |  -.1881308   .2250875    -0.84   0.403    -.6292943    .2530326
+                        |
+                  _cons |  -3.466068   1.798609    -1.93   0.054    -6.991276    .0591397
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 73.04                  Prob > chi2 = 0.0000
+
+Level 4
+logLike: 120.0016176707308
+AIC: -204.0032353414616
+pvalParam: .9743232395612191
+
+
+Predict lnalpha 1 using 2
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -32.471246  
+Iteration 1:   log pseudolikelihood = -32.291594  
+Iteration 2:   log pseudolikelihood = -32.291293  
+Iteration 3:   log pseudolikelihood = -32.291293  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =      67.42
+Log pseudolikelihood = -32.29129                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m1 |
+lnalpha_hat_gnbreg_m2 |   .3475298   .0423252     8.21   0.000     .2645738    .4304857
+                _cons |  -2.433431   .0515997   -47.16   0.000    -2.534564   -2.332297
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m2 |  -.1525641   .1543337    -0.99   0.323    -.4550527    .1499244
+                _cons |  -2.455609   .2640405    -9.30   0.000    -2.973119     -1.9381
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 0.98                   Prob > chi2 = 0.3229
+
+Level 1
+logLike: -32.2912930306365
+AIC: 72.58258606127301
+pvalParam: 2.19475613476e-16
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -20.457522  
+Iteration 1:   log pseudolikelihood = -13.427572  
+Iteration 2:   log pseudolikelihood = -13.076207  
+Iteration 3:   log pseudolikelihood = -13.074835  
+Iteration 4:   log pseudolikelihood = -13.074835  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =     219.82
+Log pseudolikelihood = -13.07484                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m1 |
+lnalpha_hat_gnbreg_m2 |   .4034229   .0324173    12.44   0.000     .3398862    .4669597
+       dummyMuscles_2 |   .3170874   .0939068     3.38   0.001     .1330335    .5011414
+       dummyMuscles_3 |   -.013154    .123826    -0.11   0.915    -.2558486    .2295406
+       dummyMuscles_4 |  -.1598207    .100557    -1.59   0.112    -.3569089    .0372674
+       dummyMuscles_5 |   .2492189   .0814591     3.06   0.002     .0895621    .4088758
+       dummyMuscles_6 |   .1319725   .1299687     1.02   0.310    -.1227614    .3867064
+                _cons |  -2.454286   .0904563   -27.13   0.000    -2.631577   -2.276994
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m2 |   -.202982   .2829585    -0.72   0.473    -.7575705    .3516065
+       dummyMuscles_2 |  -.9069947   .8965709    -1.01   0.312    -2.664241    .8502521
+       dummyMuscles_3 |   .0869349   .8020989     0.11   0.914     -1.48515     1.65902
+       dummyMuscles_4 |    .310157   .7284202     0.43   0.670     -1.11752    1.737834
+       dummyMuscles_5 |  -.0608101   .4697516    -0.13   0.897    -.9815063     .859886
+       dummyMuscles_6 |   .2853399    1.18388     0.24   0.810    -2.035021    2.605701
+                _cons |  -2.806066   .5760813    -4.87   0.000    -3.935165   -1.676967
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 19.69                  Prob > chi2 = 0.0031
+
+Level 2
+logLike: -13.07483539945933
+AIC: 54.14967079891865
+pvalParam: 1.27315257531e-08
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  1.6055777  
+Iteration 1:   log pseudolikelihood =   3.877781  
+Iteration 2:   log pseudolikelihood =   3.908729  
+Iteration 3:   log pseudolikelihood =  3.9087642  
+Iteration 4:   log pseudolikelihood =  3.9087642  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =     324.39
+Log pseudolikelihood =  3.908764                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m1 |
+lnalpha_hat_gnbreg_m2 |   .6490582   .0575973    11.27   0.000     .5361695    .7619469
+       dummyMuscles_2 |   .0770637   .0742507     1.04   0.299    -.0684649    .2225923
+       dummyMuscles_3 |  -.0978419   .0713978    -1.37   0.171     -.237779    .0420952
+       dummyMuscles_4 |  -.2360492    .080937    -2.92   0.004    -.3946828   -.0774157
+       dummyMuscles_5 |   .0389268   .0665375     0.59   0.559    -.0914842    .1693379
+       dummyMuscles_6 |  -.0333611   .0870129    -0.38   0.701    -.2039032     .137181
+ lnmean_hat_gnbreg_m2 |   .4967796   .0911914     5.45   0.000     .3180478    .6755115
+                _cons |  -3.646732   .2114157   -17.25   0.000    -4.061099   -3.232365
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m2 |  -.9851899   .3200393    -3.08   0.002    -1.612455   -.3579243
+       dummyMuscles_2 |   .3961237   .6001578     0.66   0.509    -.7801639    1.572411
+       dummyMuscles_3 |   1.221163   .4511361     2.71   0.007     .3369528    2.105374
+       dummyMuscles_4 |   1.250572   .5762029     2.17   0.030      .121235    2.379909
+       dummyMuscles_5 |   1.253458   .4963762     2.53   0.012      .280578    2.226337
+       dummyMuscles_6 |   1.294843   .7837833     1.65   0.099    -.2413436     2.83103
+ lnmean_hat_gnbreg_m2 |  -1.294692   .3461382    -3.74   0.000     -1.97311   -.6162735
+                _cons |  -.7817032   .7693241    -1.02   0.310    -2.289551    .7261443
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 53.25                  Prob > chi2 = 0.0000
+
+Level 3
+logLike: 3.908764246452742
+AIC: 24.18247150709452
+pvalParam: 5.10370708081e-08
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -6.9801276  
+Iteration 1:   log pseudolikelihood =  7.2348871  
+Iteration 2:   log pseudolikelihood =  7.6366255  
+Iteration 3:   log pseudolikelihood =  7.6376329  
+Iteration 4:   log pseudolikelihood =  7.6376329  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =     602.49
+Log pseudolikelihood =  7.637633                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+  lnalpha_hat_gnbreg_m1 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m1   |
+  lnalpha_hat_gnbreg_m2 |   .4570307   .1338064     3.42   0.001     .1947749    .7192865
+         dummyMuscles_2 |   .1173357   .0715572     1.64   0.101    -.0229139    .2575853
+         dummyMuscles_3 |  -.1330154   .0756961    -1.76   0.079    -.2813771    .0153464
+         dummyMuscles_4 |  -.2463042   .0784663    -3.14   0.002    -.4000954   -.0925131
+         dummyMuscles_5 |   .0613855   .0643153     0.95   0.340    -.0646702    .1874412
+         dummyMuscles_6 |   .0150321   .0804229     0.19   0.852    -.1425939    .1726582
+   lnmean_hat_gnbreg_m2 |   .4521247   .0959374     4.71   0.000     .2640909    .6401585
+                        |
+ c.lnmean_hat_gnbreg_m2#|
+c.lnalpha_hat_gnbreg_m2 |    .045515   .0395635     1.15   0.250    -.0320281    .1230581
+                        |
+                  _cons |   -3.54628   .2307728   -15.37   0.000    -3.998586   -3.093974
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+  lnalpha_hat_gnbreg_m2 |   1.442089   .7651968     1.88   0.059    -.0576689    2.941848
+         dummyMuscles_2 |  -.0439616   .6271514    -0.07   0.944    -1.273156    1.185233
+         dummyMuscles_3 |   1.312662   .5135665     2.56   0.011     .3060902    2.319234
+         dummyMuscles_4 |   1.372488   .5603315     2.45   0.014     .2742581    2.470717
+         dummyMuscles_5 |   1.236959   .5158396     2.40   0.016     .2259318    2.247986
+         dummyMuscles_6 |     .45304   .8642268     0.52   0.600    -1.240813    2.146893
+   lnmean_hat_gnbreg_m2 |  -.9766311   .3795644    -2.57   0.010    -1.720564   -.2326986
+                        |
+ c.lnmean_hat_gnbreg_m2#|
+c.lnalpha_hat_gnbreg_m2 |   -.624196   .2122845    -2.94   0.003    -1.040266    -.208126
+                        |
+                  _cons |  -1.490015   .9984708    -1.49   0.136    -3.446982    .4669515
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 54.07                  Prob > chi2 = 0.0000
+
+Level 4
+logLike: 7.637632941086512
+AIC: 20.72473411782698
+pvalParam: .2499679283328848
+
+
+Predict lnmean 2 using 0
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -29.229376  
+Iteration 1:   log pseudolikelihood = -28.107287  
+Iteration 2:   log pseudolikelihood = -28.081143  
+Iteration 3:   log pseudolikelihood =  -28.08113  
+Iteration 4:   log pseudolikelihood =  -28.08113  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =     228.78
+Log pseudolikelihood = -28.08113                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m2 |
+lnmean_hat_gnbreg_m0 |   1.614451   .1067383    15.13   0.000     1.405248    1.823654
+               _cons |  -3.862215   .4898924    -7.88   0.000    -4.822386   -2.902043
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m0 |  -1.152594   .5345172    -2.16   0.031    -2.200229   -.1049601
+               _cons |   2.739982   2.361681     1.16   0.246    -1.888827    7.368791
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 4.65                   Prob > chi2 = 0.0311
+
+Level 1
+logLike: -28.0811299412396
+AIC: 64.1622598824792
+pvalParam: 1.10261532478e-51
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -16.681971  
+Iteration 1:   log pseudolikelihood =  .66264524  
+Iteration 2:   log pseudolikelihood =  3.2864852  
+Iteration 3:   log pseudolikelihood =  3.3146682  
+Iteration 4:   log pseudolikelihood =  3.3147032  
+Iteration 5:   log pseudolikelihood =  3.3147032  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =     363.80
+Log pseudolikelihood =  3.314703                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m2 |
+lnmean_hat_gnbreg_m0 |   1.483198   .1130069    13.12   0.000     1.261708    1.704687
+      dummyMuscles_2 |   .0421712   .0931428     0.45   0.651    -.1403854    .2247278
+      dummyMuscles_3 |  -.2228695   .0741373    -3.01   0.003     -.368176    -.077563
+      dummyMuscles_4 |  -.1126924   .0868395    -1.30   0.194    -.2828947    .0575098
+      dummyMuscles_5 |  -.1451391   .0777207    -1.87   0.062    -.2974689    .0071907
+      dummyMuscles_6 |   .3400808    .067663     5.03   0.000     .2074637    .4726979
+               _cons |  -3.262616   .5202252    -6.27   0.000    -4.282239   -2.242994
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m0 |  -1.994644   .5363421    -3.72   0.000    -3.045855   -.9434329
+      dummyMuscles_2 |   .7663232    .367833     2.08   0.037     .0453838    1.487263
+      dummyMuscles_3 |    .298297   .4656593     0.64   0.522    -.6143784    1.210972
+      dummyMuscles_4 |   .4043143     .40367     1.00   0.317    -.3868644    1.195493
+      dummyMuscles_5 |   .7979487   .4358715     1.83   0.067    -.0563438    1.652241
+      dummyMuscles_6 |    .024463    .542218     0.05   0.964    -1.038265    1.087191
+               _cons |   5.522382   2.290316     2.41   0.016     1.033444    10.01132
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 19.54                  Prob > chi2 = 0.0033
+
+Level 2
+logLike: 3.314703192194594
+AIC: 21.37059361561081
+pvalParam: 1.03637394684e-15
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  3.1698673  
+Iteration 1:   log pseudolikelihood =  7.6011514  
+Iteration 2:   log pseudolikelihood =  8.6571997  
+Iteration 3:   log pseudolikelihood =  8.6633241  
+Iteration 4:   log pseudolikelihood =  8.6633261  
+Iteration 5:   log pseudolikelihood =  8.6633261  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =     499.41
+Log pseudolikelihood =  8.663326                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+ lnmean_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m2  |
+ lnmean_hat_gnbreg_m0 |   1.834827   .1227516    14.95   0.000     1.594238    2.075416
+       dummyMuscles_2 |  -.0829437   .0771592    -1.07   0.282    -.2341729    .0682855
+       dummyMuscles_3 |  -.2472847   .0645365    -3.83   0.000    -.3737739   -.1207955
+       dummyMuscles_4 |  -.1382522   .0757279    -1.83   0.068    -.2866762    .0101718
+       dummyMuscles_5 |  -.2197195    .072066    -3.05   0.002    -.3609661   -.0784728
+       dummyMuscles_6 |   .2832821   .0429996     6.59   0.000     .1990044    .3675597
+lnalpha_hat_gnbreg_m0 |   .1721853   .0485256     3.55   0.000     .0770769    .2672938
+                _cons |  -4.363974   .5274243    -8.27   0.000    -5.397707   -3.330242
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+ lnmean_hat_gnbreg_m0 |  -3.568309   .7557842    -4.72   0.000    -5.049619      -2.087
+       dummyMuscles_2 |   1.439259    .425842     3.38   0.001     .6046241    2.273894
+       dummyMuscles_3 |   .5435436   .4663501     1.17   0.244    -.3704859    1.457573
+       dummyMuscles_4 |   .6153529   .4890285     1.26   0.208    -.3431254    1.573831
+       dummyMuscles_5 |   1.242208   .5309805     2.34   0.019     .2015052     2.28291
+       dummyMuscles_6 |   .2985849   .5704967     0.52   0.601     -.819568    1.416738
+lnalpha_hat_gnbreg_m0 |  -.7706758   .3969856    -1.94   0.052    -1.548753    .0074017
+                _cons |   10.26029   2.466548     4.16   0.000     5.425946    15.09464
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 94.25                  Prob > chi2 = 0.0000
+
+Level 3
+logLike: 8.663326137961718
+AIC: 14.67334772407656
+pvalParam: .0003876680787473
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  4.5642744  
+Iteration 1:   log pseudolikelihood =  10.225095  
+Iteration 2:   log pseudolikelihood =  11.208945  
+Iteration 3:   log pseudolikelihood =  11.216106  
+Iteration 4:   log pseudolikelihood =  11.216111  
+Iteration 5:   log pseudolikelihood =  11.216111  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =     657.70
+Log pseudolikelihood =  11.21611                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+   lnmean_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m2    |
+   lnmean_hat_gnbreg_m0 |   1.644569   .4372797     3.76   0.000     .7875161    2.501621
+         dummyMuscles_2 |  -.0659872   .0618114    -1.07   0.286    -.1871353     .055161
+         dummyMuscles_3 |  -.2439923   .0530236    -4.60   0.000    -.3479168   -.1400679
+         dummyMuscles_4 |  -.1423671   .0770585    -1.85   0.065     -.293399    .0086648
+         dummyMuscles_5 |  -.2184193   .0672677    -3.25   0.001    -.3502617    -.086577
+         dummyMuscles_6 |   .2879022   .0333693     8.63   0.000     .2224996    .3533048
+  lnalpha_hat_gnbreg_m0 |   .4760998   .8409185     0.57   0.571     -1.17207     2.12427
+                        |
+ c.lnmean_hat_gnbreg_m0#|
+c.lnalpha_hat_gnbreg_m0 |  -.0661077   .1775194    -0.37   0.710    -.4140394     .281824
+                        |
+                  _cons |  -3.502218   2.040494    -1.72   0.086    -7.501513    .4970765
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+   lnmean_hat_gnbreg_m0 |  -8.279073   2.570724    -3.22   0.001     -13.3176   -3.240548
+         dummyMuscles_2 |   1.950899   .4821772     4.05   0.000     1.005849    2.895948
+         dummyMuscles_3 |   1.048272   .5192567     2.02   0.044     .0305476    2.065996
+         dummyMuscles_4 |   1.150952   .5631739     2.04   0.041     .0471517    2.254753
+         dummyMuscles_5 |   1.703772   .6341447     2.69   0.007      .460871    2.946672
+         dummyMuscles_6 |   .5686927    .489155     1.16   0.245    -.3900335    1.527419
+  lnalpha_hat_gnbreg_m0 |   8.280037   4.105849     2.02   0.044      .232721    16.32735
+                        |
+ c.lnmean_hat_gnbreg_m0#|
+c.lnalpha_hat_gnbreg_m0 |  -2.006153   .9367621    -2.14   0.032    -3.842173   -.1701326
+                        |
+                  _cons |   30.87339   10.77141     2.87   0.004     9.761821    51.98496
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 78.31                  Prob > chi2 = 0.0000
+
+Level 4
+logLike: 11.21611099014208
+AIC: 13.56777801971585
+pvalParam: .7095974512994618
+
+
+Predict lnalpha 2 using 0
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -126.10563  
+Iteration 1:   log pseudolikelihood = -123.97518  
+Iteration 2:   log pseudolikelihood = -123.88965  
+Iteration 3:   log pseudolikelihood = -123.88955  
+Iteration 4:   log pseudolikelihood = -123.88955  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =      34.27
+Log pseudolikelihood = -123.8896                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m2 |
+lnalpha_hat_gnbreg_m0 |   .7958047   .1359322     5.85   0.000     .5293825    1.062227
+                _cons |   .6559801   .3410263     1.92   0.054    -.0124191    1.324379
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m0 |   .2753506   .1978581     1.39   0.164    -.1124441    .6631453
+                _cons |  -.0200919    .468292    -0.04   0.966    -.9379273    .8977435
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 1.94                   Prob > chi2 = 0.1640
+
+Level 1
+logLike: -123.8895510680007
+AIC: 255.7791021360013
+pvalParam: 4.78666697416e-09
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -81.425543  
+Iteration 1:   log pseudolikelihood = -79.853839  
+Iteration 2:   log pseudolikelihood = -79.752011  
+Iteration 3:   log pseudolikelihood = -79.751693  
+Iteration 4:   log pseudolikelihood = -79.751693  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =     405.82
+Log pseudolikelihood = -79.75169                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m2 |
+lnalpha_hat_gnbreg_m0 |   .8451187   .1076906     7.85   0.000     .6340491    1.056188
+       dummyMuscles_2 |  -.7244778   .1888028    -3.84   0.000    -1.094525    -.354431
+       dummyMuscles_3 |   .3210183   .1876164     1.71   0.087     -.046703    .6887397
+       dummyMuscles_4 |  -.0035666   .1470211    -0.02   0.981    -.2917226    .2845894
+       dummyMuscles_5 |   .1368575   .1672835     0.82   0.413    -.1910121    .4647272
+       dummyMuscles_6 |  -1.077231   .2048128    -5.26   0.000    -1.478656   -.6758049
+                _cons |   .9939646   .2576573     3.86   0.000     .4889655    1.498964
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m0 |   .3510641   .2313043     1.52   0.129    -.1022841    .8044123
+       dummyMuscles_2 |  -.4191167   .4770699    -0.88   0.380    -1.354157    .5159231
+       dummyMuscles_3 |  -.4429459   .3053094    -1.45   0.147    -1.041341    .1554496
+       dummyMuscles_4 |  -1.134406    .426025    -2.66   0.008    -1.969399   -.2994122
+       dummyMuscles_5 |   .1215467   .3516844     0.35   0.730     -.567742    .8108355
+       dummyMuscles_6 |  -.1006375    .389334    -0.26   0.796    -.8637182    .6624432
+                _cons |  -.2880209   .6389565    -0.45   0.652    -1.540353    .9643109
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 11.66                  Prob > chi2 = 0.0701
+
+Level 2
+logLike: -79.75169252090593
+AIC: 187.5033850418119
+pvalParam: 3.06117580896e-18
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -65.433787  
+Iteration 1:   log pseudolikelihood = -59.938799  
+Iteration 2:   log pseudolikelihood = -59.517936  
+Iteration 3:   log pseudolikelihood = -59.517117  
+Iteration 4:   log pseudolikelihood = -59.517117  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =     777.78
+Log pseudolikelihood = -59.51712                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m2 |
+lnalpha_hat_gnbreg_m0 |   .3662851   .1007933     3.63   0.000     .1687339    .5638364
+       dummyMuscles_2 |  -.0135403   .1715011    -0.08   0.937    -.3496763    .3225957
+       dummyMuscles_3 |   .4836368   .1461336     3.31   0.001     .1972203    .7700534
+       dummyMuscles_4 |   .1990349   .1626706     1.22   0.221    -.1197937    .5178635
+       dummyMuscles_5 |   .5889965   .1708913     3.45   0.001     .2540557    .9239373
+       dummyMuscles_6 |  -.6658232   .1469894    -4.53   0.000    -.9539171   -.3777292
+ lnmean_hat_gnbreg_m0 |  -1.632832   .2097575    -7.78   0.000    -2.043949   -1.221715
+                _cons |   6.753929   .7809763     8.65   0.000     5.223244    8.284614
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m0 |  -.2436006   .5300039    -0.46   0.646    -1.282389    .7951879
+       dummyMuscles_2 |   .7018385   .6821011     1.03   0.304    -.6350551    2.038732
+       dummyMuscles_3 |  -.4971176   .3902574    -1.27   0.203    -1.262008    .2677728
+       dummyMuscles_4 |  -.5701253   .5209281    -1.09   0.274    -1.591126    .4508749
+       dummyMuscles_5 |   .8417139   .4577678     1.84   0.066    -.0554945    1.738922
+       dummyMuscles_6 |   .5507417   .4345798     1.27   0.205     -.301019    1.402502
+ lnmean_hat_gnbreg_m0 |  -.9583837   1.091819    -0.88   0.380    -3.098309    1.181542
+                _cons |   1.693471   3.395341     0.50   0.618    -4.961274    8.348216
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 46.68                  Prob > chi2 = 0.0000
+
+Level 3
+logLike: -59.51711725376767
+AIC: 151.0342345075354
+pvalParam: 7.00559979432e-15
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -65.363399  
+Iteration 1:   log pseudolikelihood = -59.620232  
+Iteration 2:   log pseudolikelihood = -59.075212  
+Iteration 3:   log pseudolikelihood = -59.074709  
+Iteration 4:   log pseudolikelihood = -59.074709  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =     749.93
+Log pseudolikelihood = -59.07471                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+  lnalpha_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m2   |
+  lnalpha_hat_gnbreg_m0 |   .1389193   .9500969     0.15   0.884    -1.723236    2.001075
+         dummyMuscles_2 |  -.0391979   .1803559    -0.22   0.828     -.392689    .3142932
+         dummyMuscles_3 |   .4658994   .1388959     3.35   0.001     .1936684    .7381304
+         dummyMuscles_4 |   .1722748   .1642827     1.05   0.294    -.1497134     .494263
+         dummyMuscles_5 |   .5902292   .1651418     3.57   0.000     .2665571    .9139013
+         dummyMuscles_6 |  -.6841299   .1529419    -4.47   0.000    -.9838905   -.3843694
+   lnmean_hat_gnbreg_m0 |  -1.531253   .5028395    -3.05   0.002      -2.5168   -.5457055
+                        |
+ c.lnmean_hat_gnbreg_m0#|
+c.lnalpha_hat_gnbreg_m0 |   .0491279   .2004674     0.25   0.806    -.3437809    .4420366
+                        |
+                  _cons |   6.301774   2.248181     2.80   0.005      1.89542    10.70813
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+  lnalpha_hat_gnbreg_m0 |   3.765676   4.072479     0.92   0.355    -4.216236    11.74759
+         dummyMuscles_2 |   .8784764   .7404957     1.19   0.235    -.5728685    2.329821
+         dummyMuscles_3 |  -.2772499   .5051603    -0.55   0.583    -1.267346    .7128461
+         dummyMuscles_4 |  -.2735175    .681738    -0.40   0.688    -1.609699    1.062664
+         dummyMuscles_5 |    1.03489   .5112981     2.02   0.043     .0327641    2.037016
+         dummyMuscles_6 |   .6988998   .5043602     1.39   0.166    -.2896281    1.687428
+   lnmean_hat_gnbreg_m0 |  -2.832297   2.272007    -1.25   0.213    -7.285349    1.620755
+                        |
+ c.lnmean_hat_gnbreg_m0#|
+c.lnalpha_hat_gnbreg_m0 |  -.8731261   .8884698    -0.98   0.326    -2.614495    .8682427
+                        |
+                  _cons |   10.05605   9.310168     1.08   0.280    -8.191541    28.30365
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 53.17                  Prob > chi2 = 0.0000
+
+Level 4
+logLike: -59.07470926338795
+AIC: 154.1494185267759
+pvalParam: .8064048476729473
+
+
+Predict lnmean 2 using 1
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  -16.38018  
+Iteration 1:   log pseudolikelihood = -14.325689  
+Iteration 2:   log pseudolikelihood = -14.314179  
+Iteration 3:   log pseudolikelihood = -14.314177  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =     327.18
+Log pseudolikelihood = -14.31418                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m2 |
+lnmean_hat_gnbreg_m1 |   1.876826   .1037605    18.09   0.000     1.673459    2.080193
+               _cons |  -5.754177   .5134277   -11.21   0.000    -6.760477   -4.747878
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m1 |   -2.54132   .5924528    -4.29   0.000    -3.702506   -1.380134
+               _cons |   9.618684   2.916864     3.30   0.001     3.901735    15.33563
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 18.40                  Prob > chi2 = 0.0000
+
+Level 1
+logLike: -14.31417734110246
+AIC: 36.62835468220493
+pvalParam: 3.95763489809e-73
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  4.0184421  
+Iteration 1:   log pseudolikelihood =  10.504772  
+Iteration 2:   log pseudolikelihood =  10.632065  
+Iteration 3:   log pseudolikelihood =  10.632318  
+Iteration 4:   log pseudolikelihood =  10.632318  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =     477.20
+Log pseudolikelihood =  10.63232                Prob > chi2       =     0.0000
+
+                                           (Std. err. adjusted for 19 clusters in PID)
+--------------------------------------------------------------------------------------
+                     |               Robust
+lnmean_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+---------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m2 |
+lnmean_hat_gnbreg_m1 |   2.112455    .184839    11.43   0.000     1.750177    2.474732
+      dummyMuscles_2 |   .0492676   .0859627     0.57   0.567    -.1192162    .2177514
+      dummyMuscles_3 |    .134881   .0736333     1.83   0.067    -.0094376    .2791997
+      dummyMuscles_4 |  -.2435057   .0854526    -2.85   0.004    -.4109898   -.0760216
+      dummyMuscles_5 |   .2927173   .0881094     3.32   0.001      .120026    .4654086
+      dummyMuscles_6 |  -.0805439    .114276    -0.70   0.481    -.3045207    .1434329
+               _cons |  -6.913826   .8673797    -7.97   0.000    -8.613859   -5.213793
+---------------------+----------------------------------------------------------------
+lnsigma2             |
+lnmean_hat_gnbreg_m1 |  -.3047644   .4784698    -0.64   0.524    -1.242548    .6330192
+      dummyMuscles_2 |  -1.562087   .3841956    -4.07   0.000    -2.315097   -.8090778
+      dummyMuscles_3 |  -.1342236   .3360678    -0.40   0.690    -.7929043    .5244572
+      dummyMuscles_4 |   .1933645   .3603061     0.54   0.591    -.5128224    .8995515
+      dummyMuscles_5 |   .0998179   .5771314     0.17   0.863    -1.031339    1.230975
+      dummyMuscles_6 |  -1.156326   .4977028    -2.32   0.020    -2.131805   -.1808462
+               _cons |  -1.134113   2.344727    -0.48   0.629    -5.729693    3.461467
+--------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 72.69                  Prob > chi2 = 0.0000
+
+Level 2
+logLike: 10.63231807848246
+AIC: 6.735363843035085
+pvalParam: 2.89911767544e-10
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  8.3132991  
+Iteration 1:   log pseudolikelihood =  14.031635  
+Iteration 2:   log pseudolikelihood =  14.424326  
+Iteration 3:   log pseudolikelihood =  14.424898  
+Iteration 4:   log pseudolikelihood =  14.424898  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =     431.64
+Log pseudolikelihood =   14.4249                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+ lnmean_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m2  |
+ lnmean_hat_gnbreg_m1 |   1.971578   .1497088    13.17   0.000     1.678154    2.265001
+       dummyMuscles_2 |   .0989339   .0663315     1.49   0.136    -.0310734    .2289412
+       dummyMuscles_3 |   .0929448   .0712562     1.30   0.192    -.0467149    .2326045
+       dummyMuscles_4 |  -.2076896   .0799832    -2.60   0.009    -.3644537   -.0509254
+       dummyMuscles_5 |   .3060152   .0843423     3.63   0.000     .1407073    .4713231
+       dummyMuscles_6 |  -.0563193   .0936937    -0.60   0.548    -.2399555     .127317
+lnalpha_hat_gnbreg_m1 |  -.1556637   .0693487    -2.24   0.025    -.2915847   -.0197427
+                _cons |   -6.69322   .7677748    -8.72   0.000    -8.198031   -5.188409
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+ lnmean_hat_gnbreg_m1 |   -.623817   .6035876    -1.03   0.301    -1.806827     .559193
+       dummyMuscles_2 |  -1.371711   .5163891    -2.66   0.008    -2.383815    -.359607
+       dummyMuscles_3 |  -.3041784   .3099328    -0.98   0.326    -.9116355    .3032786
+       dummyMuscles_4 |   .2984385   .3709014     0.80   0.421    -.4285149    1.025392
+       dummyMuscles_5 |   -.013149   .4748711    -0.03   0.978    -.9438793    .9175812
+       dummyMuscles_6 |  -1.117748   .4835671    -2.31   0.021    -2.065522   -.1699744
+lnalpha_hat_gnbreg_m1 |  -.8251982   .4026264    -2.05   0.040    -1.614331    -.036065
+                _cons |  -2.031671   2.534831    -0.80   0.423    -6.999849    2.936507
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 53.05                  Prob > chi2 = 0.0000
+
+Level 3
+logLike: 14.42489835254891
+AIC: 3.150203294902187
+pvalParam: .0247905507690333
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  16.406714  
+Iteration 1:   log pseudolikelihood =  18.822943  
+Iteration 2:   log pseudolikelihood =  19.175083  
+Iteration 3:   log pseudolikelihood =  19.175486  
+Iteration 4:   log pseudolikelihood =  19.175486  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =     684.44
+Log pseudolikelihood =  19.17549                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+   lnmean_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnmean_hat_gnbreg_m2    |
+   lnmean_hat_gnbreg_m1 |   2.970231   .4285758     6.93   0.000     2.130238    3.810224
+         dummyMuscles_2 |   .1247307   .0711153     1.75   0.079    -.0146527    .2641141
+         dummyMuscles_3 |   .0963531   .0734929     1.31   0.190    -.0476904    .2403965
+         dummyMuscles_4 |  -.2325963   .0849843    -2.74   0.006    -.3991625   -.0660301
+         dummyMuscles_5 |   .3140246   .0835516     3.76   0.000     .1502664    .4777828
+         dummyMuscles_6 |  -.0020181   .0991451    -0.02   0.984     -.196339    .1923028
+  lnalpha_hat_gnbreg_m1 |  -2.210839   .7137268    -3.10   0.002    -3.609718   -.8119601
+                        |
+ c.lnmean_hat_gnbreg_m1#|
+c.lnalpha_hat_gnbreg_m1 |   .4141649   .1380401     3.00   0.003     .1436113    .6847185
+                        |
+                  _cons |  -11.66235   2.156545    -5.41   0.000     -15.8891   -7.435598
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+   lnmean_hat_gnbreg_m1 |   2.273958   2.396933     0.95   0.343    -2.423945    6.971861
+         dummyMuscles_2 |  -1.335669   .5984449    -2.23   0.026      -2.5086   -.1627391
+         dummyMuscles_3 |  -.5457395   .3531943    -1.55   0.122    -1.237988    .1465086
+         dummyMuscles_4 |   .4676725   .3814938     1.23   0.220    -.2800417    1.215387
+         dummyMuscles_5 |   -.178903   .5167846    -0.35   0.729    -1.191782    .8339762
+         dummyMuscles_6 |  -1.008615   .5825175    -1.73   0.083    -2.150329    .1330981
+  lnalpha_hat_gnbreg_m1 |  -6.238716   4.287414    -1.46   0.146    -14.64189    2.164461
+                        |
+ c.lnmean_hat_gnbreg_m1#|
+c.lnalpha_hat_gnbreg_m1 |   1.193823   .8875165     1.35   0.179    -.5456772    2.933324
+                        |
+                  _cons |   -15.0391   11.45365    -1.31   0.189    -37.48784    7.409642
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 67.45                  Prob > chi2 = 0.0000
+
+Level 4
+logLike: 19.17548616891186
+AIC: -2.350972337823727
+pvalParam: .0026969301948477
+
+
+Predict lnalpha 2 using 1
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood =  -106.9971  
+Iteration 1:   log pseudolikelihood = -106.56737  
+Iteration 2:   log pseudolikelihood = -106.56554  
+Iteration 3:   log pseudolikelihood = -106.56554  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(1)      =      69.48
+Log pseudolikelihood = -106.5655                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m2 |
+lnalpha_hat_gnbreg_m1 |   1.376085   .1650932     8.34   0.000     1.052508    1.699662
+                _cons |   2.716866    .469481     5.79   0.000       1.7967    3.637032
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m1 |  -.4437022   .2220112    -2.00   0.046    -.8788362   -.0085681
+                _cons |  -2.234488   .6668078    -3.35   0.001    -3.541407   -.9275688
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(1) = 3.99                   Prob > chi2 = 0.0457
+
+Level 1
+logLike: -106.5655432088934
+AIC: 221.1310864177869
+pvalParam: 7.73677213214e-17
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -80.211272  
+Iteration 1:   log pseudolikelihood = -76.427291  
+Iteration 2:   log pseudolikelihood =  -76.26322  
+Iteration 3:   log pseudolikelihood = -76.262684  
+Iteration 4:   log pseudolikelihood = -76.262684  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(6)      =     307.48
+Log pseudolikelihood = -76.26268                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m2 |
+lnalpha_hat_gnbreg_m1 |   1.281192   .1648087     7.77   0.000     .9581728    1.604211
+       dummyMuscles_2 |  -.7829566   .1181685    -6.63   0.000    -1.014563   -.5513506
+       dummyMuscles_3 |   .0384783   .1395606     0.28   0.783    -.2350555     .312012
+       dummyMuscles_4 |   .0573817   .1455362     0.39   0.693    -.2278639    .3426273
+       dummyMuscles_5 |  -.4123374   .1218259    -3.38   0.001    -.6511117   -.1735631
+       dummyMuscles_6 |  -.8244715   .1966298    -4.19   0.000    -1.209859   -.4390842
+                _cons |   2.767227   .4767866     5.80   0.000     1.832743    3.701712
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m1 |  -.2868655   .2568671    -1.12   0.264    -.7903159    .2165848
+       dummyMuscles_2 |  -1.432806   .3954248    -3.62   0.000    -2.207824   -.6577877
+       dummyMuscles_3 |  -.5436003   .4253145    -1.28   0.201    -1.377201    .2900009
+       dummyMuscles_4 |  -.5509635    .514423    -1.07   0.284    -1.559214    .4572871
+       dummyMuscles_5 |  -.6497166   .3657674    -1.78   0.076    -1.366608    .0671743
+       dummyMuscles_6 |  -.4717739   .7152528    -0.66   0.510    -1.873644    .9300958
+                _cons |  -1.710413   .7409519    -2.31   0.021    -3.162652    -.258174
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(6) = 23.63                  Prob > chi2 = 0.0006
+
+Level 2
+logLike: -76.26268364453404
+AIC: 180.5253672890681
+pvalParam: 5.69541874115e-17
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -41.308699  
+Iteration 1:   log pseudolikelihood =  -38.04309  
+Iteration 2:   log pseudolikelihood = -37.796467  
+Iteration 3:   log pseudolikelihood = -37.795948  
+Iteration 4:   log pseudolikelihood = -37.795948  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(7)      =     425.31
+Log pseudolikelihood = -37.79595                Prob > chi2       =     0.0000
+
+                                            (Std. err. adjusted for 19 clusters in PID)
+---------------------------------------------------------------------------------------
+                      |               Robust
+lnalpha_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+----------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m2 |
+lnalpha_hat_gnbreg_m1 |   .9412038   .1173436     8.02   0.000     .7112146    1.171193
+       dummyMuscles_2 |   .0633889   .1544917     0.41   0.682    -.2394092     .366187
+       dummyMuscles_3 |   .0717666   .0850192     0.84   0.399    -.0948679    .2384011
+       dummyMuscles_4 |   .4302778   .0963202     4.47   0.000     .2414936    .6190619
+       dummyMuscles_5 |  -.0749231   .1201495    -0.62   0.533    -.3104117    .1605654
+       dummyMuscles_6 |   .0800601   .2211423     0.36   0.717    -.3533708     .513491
+ lnmean_hat_gnbreg_m1 |  -2.242106   .3227913    -6.95   0.000    -2.874765   -1.609447
+                _cons |   12.14901   1.448802     8.39   0.000     9.309411    14.98861
+----------------------+----------------------------------------------------------------
+lnsigma2              |
+lnalpha_hat_gnbreg_m1 |  -.8294489   .3258142    -2.55   0.011    -1.468033   -.1908648
+       dummyMuscles_2 |   .1260941   .4167269     0.30   0.762    -.6906756    .9428638
+       dummyMuscles_3 |   .4224279    .567247     0.74   0.456    -.6893559    1.534212
+       dummyMuscles_4 |   .3190973   .4431756     0.72   0.472    -.5495109    1.187706
+       dummyMuscles_5 |   1.192879   .5787892     2.06   0.039     .0584734    2.327285
+       dummyMuscles_6 |   1.351572   .5693069     2.37   0.018     .2357512    2.467393
+ lnmean_hat_gnbreg_m1 |   -1.44314   .5972169    -2.42   0.016    -2.613664   -.2726165
+                _cons |   1.820657   2.326673     0.78   0.434    -2.739538    6.380852
+---------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(7) = 50.93                  Prob > chi2 = 0.0000
+
+Level 3
+logLike: -37.79594825811711
+AIC: 107.5918965162342
+pvalParam: 3.75808071273e-12
+
+
+Fitting full model:
+
+Iteration 0:   log pseudolikelihood = -43.961338  
+Iteration 1:   log pseudolikelihood = -38.442319  
+Iteration 2:   log pseudolikelihood = -37.443012  
+Iteration 3:   log pseudolikelihood = -37.436249  
+Iteration 4:   log pseudolikelihood = -37.436243  
+Iteration 5:   log pseudolikelihood = -37.436243  
+
+Heteroskedastic linear regression               Number of obs     =        114
+ML estimation
+                                                Wald chi2(8)      =     430.42
+Log pseudolikelihood = -37.43624                Prob > chi2       =     0.0000
+
+                                              (Std. err. adjusted for 19 clusters in PID)
+-----------------------------------------------------------------------------------------
+                        |               Robust
+  lnalpha_hat_gnbreg_m2 | Coefficient  std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+lnalpha_hat_gnbreg_m2   |
+  lnalpha_hat_gnbreg_m1 |   .4494737   2.926364     0.15   0.878    -5.286094    6.185041
+         dummyMuscles_2 |   .0697249   .1542526     0.45   0.651    -.2326045    .3720544
+         dummyMuscles_3 |   .0662795   .0839883     0.79   0.430    -.0983345    .2308936
+         dummyMuscles_4 |   .4405954    .099889     4.41   0.000     .2448166    .6363743
+         dummyMuscles_5 |  -.0838327   .1115659    -0.75   0.452    -.3024978    .1348325
+         dummyMuscles_6 |   .0854364   .2206951     0.39   0.699    -.3471179    .5179908
+   lnmean_hat_gnbreg_m1 |  -2.011696   1.540761    -1.31   0.192    -5.031532    1.008141
+                        |
+ c.lnmean_hat_gnbreg_m1#|
+c.lnalpha_hat_gnbreg_m1 |   .1036816   .5930877     0.17   0.861    -1.058749    1.266112
+                        |
+                  _cons |    11.0612   7.565609     1.46   0.144    -3.767117    25.88953
+------------------------+----------------------------------------------------------------
+lnsigma2                |
+  lnalpha_hat_gnbreg_m1 |   2.982172   4.929282     0.60   0.545    -6.679043    12.64339
+         dummyMuscles_2 |   .1613578   .4193528     0.38   0.700    -.6605586    .9832743
+         dummyMuscles_3 |   .4406198   .5371913     0.82   0.412    -.6122558    1.493495
+         dummyMuscles_4 |   .3888489   .4274636     0.91   0.363    -.4489643    1.226662
+         dummyMuscles_5 |   1.258172   .5917773     2.13   0.033     .0983103    2.418035
+         dummyMuscles_6 |   1.252447    .628354     1.99   0.046     .0208955    2.483998
+   lnmean_hat_gnbreg_m1 |  -3.341095   2.468458    -1.35   0.176    -8.179183    1.496993
+                        |
+ c.lnmean_hat_gnbreg_m1#|
+c.lnalpha_hat_gnbreg_m1 |  -.7801429   1.014723    -0.77   0.442    -2.768964    1.208678
+                        |
+                  _cons |   11.05778   11.79471     0.94   0.348    -12.05943    34.17499
+-----------------------------------------------------------------------------------------
+Wald test of lnsigma2=0: chi2(8) = 72.00                  Prob > chi2 = 0.0000
+
+Level 4
+logLike: -37.43624269401568
+AIC: 110.8724853880314
+pvalParam: .8612236996040142
+
