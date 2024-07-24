@@ -32,7 +32,7 @@ qui{
                     
                     // Run model excluding one participant, then predict in that participant
 
-                    qui hetregress     `Var'_hat_gnbreg_m`Out'             ///
+                    qui hetregress     `Var'_hat_gnbreg_m`Out'              ///
                                         c.lnmean_hat_gnbreg_m`Pred'         /// 
                                         c.lnalpha_hat_gnbreg_m`Pred'        ///
                                         b4.Muscle                           ///
@@ -204,8 +204,7 @@ qui{
                 #delimit cr
 
 
-                // Prepare Box plots of agreement across muscle sites
-                
+                // Prepare Box plots of agreement across muscle sites  
                 // Check if any residuals by muscle site are statistically significantly different from zero
 
                 noisi di _n "Assess differential agreement by muscle site" _n

@@ -16,7 +16,7 @@ qui{
         
     noisi di _n "Zero-inflated generalized negative binomial regression (pooled analysis)" _n
 
-    noisi zignbreg  GSL b2.Muscle##b2.Machine [pweight=NBin_Prob]   ///
+    noisi zignbreg  GSL b2.Muscle##b2.Machine [pweight=NBin_Prob]       ///
                         ,                                               ///
                         lna(b2.Muscle##b2.Machine)                      ///
                         inf(b2.Muscle##b2.Machine)                      ///
@@ -87,9 +87,9 @@ qui{
 
             forvalues i = 1/255{
             replace Prob_`curMachine' = (nbinomial(`i'      ,`curK_`curMachine'',`curP_`curMachine'') - ///
-                                            nbinomial(`=`i'+1' ,`curK_`curMachine'',`curP_`curMachine'')   ///
-                                            )*(1-`curZero_`curMachine'')                                    ///
-                                            in `=`i'+1'
+                                         nbinomial(`=`i'+1' ,`curK_`curMachine'',`curP_`curMachine'')   ///
+                                        )*(1-`curZero_`curMachine'')                                    ///
+                                        in `=`i'+1'
             }
         }
         

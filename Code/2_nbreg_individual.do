@@ -38,17 +38,14 @@ qui{
 
         while `hasConverged' == 0{
 
-            #delimit ;
-            noisi   zignbreg GSL b`baseMuscle'.Muscle##b2.Machine [pweight=NBin_Prob] 
-                    if 
-                    PID == `curPID'
-                    , 
-                    lna(b`baseMuscle'.Muscle##b2.Machine) 
-                    inf(b`baseMuscle'.Muscle##b2.Machine) 
-                    vce(cluster Image) 
-                    iterate(100)
-                    ;
-            #delimit cr
+            noisi   zignbreg GSL b`baseMuscle'.Muscle##b2.Machine [pweight=NBin_Prob]   ///
+                    if                                                                  ///
+                    PID == `curPID'                                                     ///
+                    ,                                                                   ///
+                    lna(b`baseMuscle'.Muscle##b2.Machine)                               ///
+                    inf(b`baseMuscle'.Muscle##b2.Machine)                               ///
+                    vce(cluster Image)                                                  ///
+                    iterate(100)                                            
 
             if e(converged) == 1    local hasConverged = 1
             else                    local baseMuscle = `baseMuscle'+1
